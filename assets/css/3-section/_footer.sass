@@ -1,0 +1,71 @@
+footer
+  background: $footer-bg
+
+  .wrap-footer
+    height: 150px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: #fff
+
+    h3
+      margin: 0
+      margin-right: 10px
+      font-size: 20px
+
+    .searchbar
+      width: 50%
+      margin-left: 10px
+
+      .input-group
+        width: 90%
+        display: flex
+        align-items: center
+
+        .form-control, .btn-default
+          width: 360px
+          height: 45px !important
+          border-radius: 0
+
+        .btn-default
+          width: 75px
+          background: $Gobutton-color
+          border: none
+          color: #fff
+          font-size: 16px
+          font-weight: 600
+
+/**** RESPONSIVE FOOTER ****/
+@media (max-width: 765px)
+  footer
+    .wrap
+      width: 100%
+      margin: 0 auto
+
+    .wrap-footer
+      flex-direction: column
+      justify-content: center
+
+      h3
+        width: 100%
+        font-size: 18px
+        margin: 10px 0
+
+      .searchbar
+        width: 100%
+        margin: 0
+
+@media (max-width: 530px)
+  footer
+    .wrap
+      width: 100%
+      margin: 0 10px
+
+@media (max-width: 455px)
+  footer
+    .searchbar
+      width: 50%
+
+      .input-group
+        width: 85%
